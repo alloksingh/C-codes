@@ -1,0 +1,230 @@
+Que-1 Write a C program to enter two number and find their sum.
+
+#include<stdio.h>
+void main()
+{
+int a,b,sum;
+printf("enter two no.\n");
+scanf("%d%d",&a,&b);
+sum=a+b;
+printf("a=%d\n b=%d\n sum=%d\n",a,b,sum);
+}
+
+Que-2 Write a C program to enter length and breadth of a rectangle and find its area .
+
+#include<stdio.h>
+void main()
+{
+    int a,b,area;
+    printf("enter lenth and breadth.\n");
+    scanf("%d%d",&a,&b);
+    area=a*b;
+    printf("a=%d\n b=%d\n area=%d\n",a,b,area);
+}
+
+Que-3 Write a C program to enter two number and perform all airthmatic operations.
+
+#include<stdio.h>
+void main()
+{
+    int a,b,sum,multiply,divide,subtract;
+    printf("enter two no.\n");
+    scanf("%d%d",&a,&b);
+    sum=a+b;
+    multiply=a*b;
+    divide=a/b;
+    subtract=a-b;
+    printf("a=%d\n b=%d\n sum=%d\n multiply=%d\n divide=%d\n subtract=%d\n",a,b,sum,multiply,divide,subtract);
+}
+
+
+Que-4 Write a C program to enter length and breadth of a rectangle and find its perimeter .
+
+#include<stdio.h>
+void main()
+{
+    int a,b,perimeter;
+    printf("enter lenth and breadth.\n");
+    scanf("%d%d",&a,&b);
+    perimeter=2(a+b);
+    printf("a=%d\n b=%d\n perimeter=%d\n",a,b,perimeter);
+}
+
+
+Que-5 Write a C program to enter radius of circle and find its diameter,circumference,area .
+
+#include<stdio.h>
+void main()
+{
+    int r,diameter,circumference,area;
+    printf("enter radius of circle.\n");
+    scanf("%d",&r);
+    diameter=2*r;
+    circumference=2*3.14*r;
+    area=3.14*r*r;
+    printf("r=%d\n diameter=%d\n circumference=%d\n area=%d\n",r,diameter,circumference,area);
+}
+
+Que-6 Write a C program to enter length in centimeter and convert it into meter and kilometer .
+
+#include<stdio.h>
+void main()
+{
+    int l,meter,kilometer,;
+    printf("enter lenth in centimeter.\n");
+    scanf("%d",&l);
+    meter=l/100;
+    kilometer=l/100000;
+    printf("l=%d\n meter=%d\n kilometer=%d\n",l,meter,kilometer);
+}
+
+
+Que-7 Write a C program to enter temperature in celcius and convert it into fahrenheit .
+
+#include<stdio.h>
+void main()
+{
+    int c,fahrenheit;
+    printf("enter temp. in celcius\n");
+    scanf("%d",&c);
+    fahrenheit=(c*(9/5))+32;
+    printf("c=%d\n temp in fahrenheit=%d\n ",c,fahrenheit);
+}
+
+Que-8 Write a C program to enter temperature in fahrenheit and convert it into celcius.
+
+#include<stdio.h>
+void main()
+{
+    int f,celcius;
+    printf("enter temp. in fahrenhent\n");
+    scanf("%d",&f);
+    celcius=[(f-32)*5]/9;
+    printf("c=%d\n temp in celcius=%d\n "f,celcius);
+}
+
+Que-9 Write a C program to convert days into years,weeks,and days.
+
+#include<stdio.h>
+void main()
+{
+    int days,years,weeks;
+    printf("enter no. of days\n");
+    scanf("%d",&days);
+    years=days/365;
+    weeks=(days%365)/7;
+    days=days-((years*365)+(weeks*7));
+    printf("days=%d\n years=%d\n weeks=%d\n days=%d\n ",days,years,weeks,days);
+}
+
+Que-10 Write a C program to find power of any number x^y.
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int x,y,a;
+    printf("Enter the base");
+    scanf("%d",&x);
+    printf("Enter the power");
+    scanf("%d",&y);
+    a=pow(x,y);
+    printf("%d",a);
+}
+
+Que-11 Write a C program to enter any number and calculate its square root.
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int x;
+    float a;
+    printf("Enter the number");
+    scanf("%d",&x);
+    a=sqrt(x);
+    printf("%f",a);
+}
+
+
+Que-12 Write a C program to enter two angle of a triangle and find the third angle.
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int x,y,z;
+    printf("Enter two angles");
+    scanf("%d%d",&x,&y);
+    z=180-(x+y);
+    printf("x=%d\n y=%d\n the third angle of triangle=%d\n",x,y,z);
+}
+
+
+Que-13 Write a C program to enter base and height of a triangle and find its area.
+
+#include<stdio.h>
+void main()
+{
+    int base,height,area;
+    printf("Enter base and height");
+    scanf("%d%d",&base,&height);
+    area=1/2(base*height);
+    printf("base=%d\n height=%d\n area of triangle=%d\n",base,height,area);
+}
+
+Que-14 Write a C program to calculate area of a equilateral triangle.
+
+#include<stdio.h>
+void main()
+{
+    int x,area;
+    printf("Enter length of triangle");
+    scanf("%d",&x);
+    area=3^1/2/4*(x*x);
+    printf("x=%d\n area of equivalent triangle=%d\n",x,area);
+}
+
+Que-15 Write a C program to enter marks of 5 subjects and find total,average and percentage.
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int p,c,m,h,e,total,average,percentage;
+    printf("Enter five subject marks");
+    scanf("%d%d%d%d%d",&p,&c,&m,&h,&e);
+    total=p+c+m+h+e;
+    average=(p+c+m+h+e)/5;
+    percentage=((p+c+m+h+e)/500)*100;
+    printf("p=%d\n c=%d\n m=%d\n h=%d\n e=%d\n total=%d\n average=%d\n percentage=%d\n",p,c,m,h,e,total,average,percentage);
+}
+
+
+Que-16 Write a C program to enter P,T,R and calculate simple interest.
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int p,t,r,simple interest;
+    printf("Enter P,R,T");
+    scanf("%d%d%d",&p,&t,&r);
+    simple interest=p*r*t/100;
+    printf("p=%d\n t=%d\n t=%d\n simple interest=%d\n",p,r,t,simple interest);
+}
+
+
+
+Que-17 Write a C program to enter P,T,R and calculate compound interest.
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int p,t,r,compound interest;
+    printf("Enter P,R,T");
+    scanf("%d%d%d",&p,&t,&r);
+    compound interest=(p*r*t/100)-p;
+    printf("p=%d\n t=%d\n t=%d\n compound interest=%d\n",p,r,t,compound interest);
+}
